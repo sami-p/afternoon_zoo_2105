@@ -19,4 +19,10 @@ RSpec.describe Zoo do
 
     expect(zoo.street).to eq("2300 Southern Blvd")
   end
-end 
+
+  it 'has a city' do
+    zoo = Zoo.new("Bronx Zoo", "2300 Southern Blvd", "Bronx", "NY", "10460")
+
+    expect(zoo.city).to eq("Bronx")
+  end
+end
