@@ -31,4 +31,10 @@ RSpec.describe Zoo do
 
     expect(zoo.state).to eq("NY")
   end
+
+  it 'has a zip_code' do
+    zoo = Zoo.new("Bronx Zoo", "2300 Southern Blvd", "Bronx", "NY", "10460")
+
+    expect(zoo.zip_code).to eq("10460")
+  end
 end
