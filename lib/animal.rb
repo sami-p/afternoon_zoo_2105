@@ -8,4 +8,8 @@ class Animal
     @weight = weight.to_s + " pounds"
     @age = age.to_s + " weeks"
   end
+
+  def age_in_days
+    @age.to_i * 7
+  end
 end
