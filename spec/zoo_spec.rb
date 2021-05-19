@@ -98,6 +98,7 @@ RSpec.describe Zoo do
 
       expect(zoo.animals_older_than(250)).to eq([])
       expect(zoo.animals_older_than(100)).to eq([animal_3, animal_4])
+      expect(zoo.animals_older_than(10)).to eq([animal_1, animal_2, animal_3, animal_4])
     end
   end
 end
