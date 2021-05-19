@@ -12,4 +12,8 @@ class Zoo
     @state = state
     @zip_code = zip_code
   end
+
+  def address
+    @street + " " + @city + ", " + @state + " " + @zip_code 
+  end
 end
