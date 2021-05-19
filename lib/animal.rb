@@ -12,4 +12,10 @@ class Animal
   def age_in_days
     @age.to_i * 7
   end
+
+  def feed!(servings)
+    weight_num = @weight.to_i
+    weight_num += servings
+    @weight = weight_num.to_s + " pounds"
+  end
 end
