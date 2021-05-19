@@ -18,4 +18,8 @@ class Animal
     weight_num += servings
     @weight = weight_num.to_s + " pounds"
   end
+
+  def weight_integer
+    @weight.to_i
+  end
 end
