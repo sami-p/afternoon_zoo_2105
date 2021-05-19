@@ -4,7 +4,8 @@ class Zoo
               :city,
               :state,
               :zip_code,
-              :inventory
+              :inventory,
+              :animal_count
 
   def initialize(name, street, city, state, zip_code)
     @name = name
@@ -13,6 +14,7 @@ class Zoo
     @state = state
     @zip_code = zip_code
     @inventory = []
+    @animal_count = 0
   end
 
   def address
