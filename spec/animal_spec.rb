@@ -14,7 +14,7 @@ RSpec.describe Animal do
     expect(animal.kind).to eq("Sea Otter")
   end
 
-  xit 'has a weight' do
+  it 'has a weight' do
     animal = Animal.new("Sea Otter", 10, 25)
 
     expect(animal.weight).to eq("10 pounds")
