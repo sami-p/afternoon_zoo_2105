@@ -51,4 +51,10 @@ class Zoo
               }
     return details
   end
+
+  def animals_sorted_by_weight
+    animal_array = @inventory
+    animal_array.sort_by!(&:weight_integer)
+    animal_array.reverse
+  end
 end
