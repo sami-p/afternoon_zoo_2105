@@ -49,4 +49,10 @@ RSpec.describe Zoo do
 
     expect(zoo.inventory).to eq([])
   end
+
+  it 'starts with animal_count of 0' do
+    zoo = Zoo.new("Bronx Zoo", "2300 Southern Blvd", "Bronx", "NY", "10460")
+
+    expect(zoo.animal_count).to eq(0)
+  end
 end
