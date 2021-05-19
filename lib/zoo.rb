@@ -40,7 +40,15 @@ class Zoo
     total_weight = 0
     @inventory.each do |animal|
       total_weight += animal.weight.to_i
-    end 
+    end
     total_weight
+  end
+
+  def details
+    details = {
+                "total_weight" => total_weight_of_animals,
+                "street_address" => @street
+              }
+    return details
   end
 end
