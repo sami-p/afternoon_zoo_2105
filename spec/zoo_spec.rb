@@ -43,4 +43,10 @@ RSpec.describe Zoo do
 
     expect(zoo.address).to eq("2300 Southern Blvd Bronx, NY 10460")
   end
+
+  it 'starts with empty inventory' do
+    zoo = Zoo.new("Bronx Zoo", "2300 Southern Blvd", "Bronx", "NY", "10460")
+
+    expect(zoo.inventory).to eq([])
+  end
 end
