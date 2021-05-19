@@ -8,7 +8,7 @@ RSpec.describe Animal do
     expect(animal).to be_a(Animal)
   end
 
-  xit 'has a kind' do
+  it 'has a kind' do
     animal = Animal.new("Sea Otter", 10, 25)
 
     expect(animal.kind).to eq("Sea Otter")
