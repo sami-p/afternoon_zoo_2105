@@ -1,5 +1,7 @@
 class Zoo
-
-  def initialize(name, address, city, state, zip)
-  end 
+  attr_reader :name
+  
+  def initialize(name, street, city, state, zip_code)
+    @name = name
+  end
 end
