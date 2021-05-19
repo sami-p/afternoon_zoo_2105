@@ -38,5 +38,9 @@ RSpec.describe Animal do
     animal.feed!(2)
 
     expect(animal.weight).to eq("12 pounds")
+
+    animal.feed!(1)
+
+    expect(animal.weight).to eq("13 pounds")
   end
 end
