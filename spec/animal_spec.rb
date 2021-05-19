@@ -22,11 +22,11 @@ RSpec.describe Animal do
 
   it 'has an age' do
     animal = Animal.new("Sea Otter", 10, 25)
-
+    
     expect(animal.age).to eq("25 weeks")
   end
 
-  xit 'has an age in days' do
+  it 'has an age in days' do
     animal = Animal.new("Sea Otter", 10, 25)
 
     expect(animal.age_in_days).to eq(175)
