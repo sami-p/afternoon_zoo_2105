@@ -25,4 +25,12 @@ class Zoo
     @inventory << animal
     @animal_count += 1
   end
+
+  def animals_older_than(weeks)
+    animals = []
+    @inventory.each do |animal|
+      animal.age.to_i > 250
+    end
+    animals
+  end
 end
