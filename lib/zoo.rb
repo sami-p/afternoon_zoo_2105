@@ -31,8 +31,16 @@ class Zoo
     @inventory.each do |animal|
       if animal.age.to_i > weeks
         animals << animal
-      end 
+      end
     end
     animals
+  end
+
+  def total_weight_of_animals
+    total_weight = 0
+    @inventory.each do |animal|
+      total_weight += animal.weight.to_i
+    end 
+    total_weight
   end
 end
