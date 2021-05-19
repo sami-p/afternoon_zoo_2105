@@ -20,4 +20,8 @@ class Zoo
   def address
     @street + " " + @city + ", " + @state + " " + @zip_code
   end
+
+  def add_animal(animal)
+    @inventory << animal
+  end
 end
