@@ -29,7 +29,9 @@ class Zoo
   def animals_older_than(weeks)
     animals = []
     @inventory.each do |animal|
-      animal.age.to_i > 250
+      if animal.age.to_i > weeks
+        animals << animal
+      end 
     end
     animals
   end
